@@ -1,6 +1,76 @@
 from math import*
 from random import*
 
+
+#8
+while True:
+    print("piima hind on 2 euro, saia maksab 5 euro, leiba maksab 3 euro")
+    try:
+        p=int(input("Kas ta soovib osta piima?"))
+    except:
+        print("Kirjuta JAH voi EI!!")
+        if p=="JAH" and p==2:
+            s=int(input("Kas ta soovib osta saia?"))
+        if s=="JAH" and s==5:
+            l=int(input("Kas ta soovib osta leiba?"))
+        if l=="JAH" and l==3:
+            h=l+s+p 
+            print(f"Hind on {h}")
+        if h.isalpha(): break
+
+
+#7
+while True:
+    try:
+        mn=float(input("Mis on sinu sugu?"))
+        if mn.upper()=="MEES":
+            k=float(input("Mis on sinu kasv?"))
+        elif k>1.75:
+            print("Teil on pikka kasv.")
+        elif k<1.75:
+            print("Teil on lühike kasv.")
+        elif k==1.75:
+            print("Teil on keskmine kasv.")
+        if mn.upper()=="NAINE":
+            k=float(input("Mis on sinu kasv."))
+        elif k>1.65:
+            print("Teil on pikka kasv.")
+        elif k<1.65:
+            print("Teil on lühike kasv.")
+        elif k==1.65:
+            print("Teil on keskmine kasv.")
+    except:
+        print("Viga!!")
+
+#6
+while True:
+    try:
+        k=float(input("Mis on sinu kasv."))
+        if k>1.75:
+            print("Teil on pikka kasv.")
+        if k<1.75:
+            print("Teil on lühike kasv.")
+        if k==1.75:
+            print("Teil on keskmine kasv.")
+        if k.isalpha(): break
+    except:
+        print("Kirjuta numbrid!!!")
+
+
+#5
+while True:
+    try:
+        t=float(input("Mis on temperatuur ?"))
+        if t.isalpha(): break
+        if t>18:
+            print("soovitav toasoojus talvel 18°")
+        if t<18:
+            print("soovitav toasoojus talvel 18°")
+    except:
+        
+
+
+
 #3
 while True:
     try:
@@ -24,16 +94,6 @@ if r.upper()=="JAH":
             print("Viga!!")
     hind=l*p*hind
     print(f"Remonti hind on {hind}")
-else:
-
-while True:
-    vh=float(input("Kui palju maksab vahetamise hind?"))
-
-
-
-
-
-
 
 
 #2
