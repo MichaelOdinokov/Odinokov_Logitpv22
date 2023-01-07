@@ -3,6 +3,17 @@ from random import*
 
 
 
+#12
+sugu=input("Palun sisestage oma sugu (M / F):")
+
+if sugu=="M":
+  vanus=int(input("Palun sisestage oma vanus:"))
+  if vanus>=16 and vanus<=18:
+    print("Sa sobid meeskonda!")
+  else:
+    print("Vabandust, te ei sobi meeskonda.")
+else:
+  print("Vabandust, te ei sobi meeskonda.")
 
 #10
 while True:
