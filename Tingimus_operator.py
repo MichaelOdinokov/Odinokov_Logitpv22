@@ -24,16 +24,6 @@ if r.upper()=="JAH":
             print("Viga!!")
     hind=l*p*hind
     print(f"Remonti hind on {hind}")
-else:
-
-while True:
-    vh=float(input("Kui palju maksab vahetamise hind?"))
-
-
-
-
-
-
 
 
 #2
