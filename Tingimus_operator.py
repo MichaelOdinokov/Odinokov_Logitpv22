@@ -1,12 +1,28 @@
 from math import*
 from random import*
 
+
+#8
+while True:
+    print("piima hind on 2 euro, saia maksab 5 euro, leiba maksab 3 euro")
+    try:
+        p=int(input("Kas ta soovib osta piima?"))
+    except:
+        print("Kirjuta JAH voi EI!!")
+        if p=="JAH" and p==2:
+            s=int(input("Kas ta soovib osta saia?"))
+        if s=="JAH" and s==5:
+            l=int(input("Kas ta soovib osta leiba?"))
+        if l=="JAH" and l==3:
+            h=l+s+p 
+            print(f"Hind on {h}")
+        if h.isalpha(): break
+
+
 #7
 while True:
     try:
         mn=float(input("Mis on sinu sugu?"))
-    except:
-        print("Kirjuta mees voi naine!!")
         if mn.upper()=="MEES":
             k=float(input("Mis on sinu kasv?"))
         elif k>1.75:
@@ -23,7 +39,8 @@ while True:
             print("Teil on lühike kasv.")
         elif k==1.65:
             print("Teil on keskmine kasv.")
-
+    except:
+        print("Viga!!")
 
 #6
 while True:
@@ -53,6 +70,11 @@ while True:
         
 
 
+#4
+print("Alghind 700")
+a=700
+h=700*30/100
+print(f"Soodushind on {h}")
 
 #3
 while True:
