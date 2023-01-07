@@ -2,21 +2,40 @@ from math import*
 from random import*
 
 
-#8
+
+
+#10
 while True:
-    print("piima hind on 2 euro, saia maksab 5 euro, leiba maksab 3 euro")
     try:
-        p=int(input("Kas ta soovib osta piima?"))
+        a=input("Sisestage esimene arv:")
+        A=int(a)
+        b=input("Sisestage teine arv:")
+        B=int(b)
+        op=input("Sisestage soovitud tehe (+-*/):")
     except:
-        print("Kirjuta JAH voi EI!!")
-        if p=="JAH" and p==2:
-            s=int(input("Kas ta soovib osta saia?"))
-        if s=="JAH" and s==5:
-            l=int(input("Kas ta soovib osta leiba?"))
-        if l=="JAH" and l==3:
-            h=l+s+p 
-            print(f"Hind on {h}")
-        if h.isalpha(): break
+        print("Viga!!!")
+    if op == "+":
+        r=A+B
+    elif op=="-":
+        r=A-B
+    elif op=="*":
+        r=A*B
+    elif op == "/":
+        r=A/B
+        print(f"{r}")
+
+
+
+#9
+s=input("Sisestage ruudu külje pikkus: ")
+A=s
+s=input("Sisestage ruudu teise külje pikkus: ")
+B=s
+if A==B:
+  print("See on ruut.")
+else:
+  print("See ei ole ruut.")
+
 
 
 #7
