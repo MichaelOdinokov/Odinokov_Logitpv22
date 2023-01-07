@@ -1,8 +1,6 @@
 from math import*
 from random import*
 
-
-
 #12
 sugu=input("Palun sisestage oma sugu (M / F):")
 
