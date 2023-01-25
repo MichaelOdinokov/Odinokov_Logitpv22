@@ -24,5 +24,12 @@ while True:
         print(slovo_list)
     elif valik==4:
         a=input("Sisseta bukvu, et sa soovid udalit")
-        slovo_list.remove(a)
-        print(slovo_list)
+        n=slovo_list.count(a)
+        if n>0:
+            for in range(n):
+                slovo_list.remove(a)
+        else:
+            print("Iskomoi bukvi net")
+    print(slovo_list)
+
+
