@@ -1,28 +1,26 @@
 from Omamodul import *
 
 
-#square
-i=5
-P=i**4
-S=i**2
-d=P/4
-print(f"S
 
 
-#arithmetic
-arithmetic=a
-print(a)
-aa=y
+#4
+vastus=season
+print()
+#3
+vastus=square(float(input("Kirjutage üks arv:")))
+print()
+#2
+vastus=is_year_leap(input("Aaasta:"))
+print(vastus)
+print()
+#1
+vastus=arithmetic(float(input("arv1:"),input("tehe:"),float(input("arv2:"))))
+print(vastus)
 
 
 
-# is_year_leap
-while True:
-    aa=int(input("Mis aastat täna on?"))
-    if aa==2023:
-        print(aa)#return
-    else:
-        print("Viga")
+
+
 
 
     
