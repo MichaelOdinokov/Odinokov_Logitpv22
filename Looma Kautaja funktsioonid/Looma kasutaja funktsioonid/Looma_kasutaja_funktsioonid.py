@@ -1,7 +1,10 @@
 from Omamodul import *
 
+#7
 
+#6
 
+#5
 
 #4
 vastus=season
@@ -10,7 +13,7 @@ print()
 vastus=square(float(input("Kirjutage üks arv:")))
 print()
 #2
-vastus=is_year_leap(input("Aaasta:"))
+vastus=is_year_leap(input("Aaasta:")) 
 print(vastus)
 print()
 #1

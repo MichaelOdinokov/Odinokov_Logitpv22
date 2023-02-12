@@ -24,7 +24,7 @@ def   is_year_leap(a:int)->bool:
     :rtype: str
     """
     if a%4==0:
-        True
+        True 
     else:
         False
     return False or True
@@ -56,6 +56,31 @@ def season(k1,k:int)->any:
     return k1
 
 #5
+def bank(b, aa):
+    """
+    """
+    for i in range(aa):
+        b=b+b*0.1
+    return b
+
+#6
+def is_prem(n):
+    """
+    """
+    if n<=1:
+        return False
+    for i in range(2,n):
+        if n%i==0:
+            return False
+    return True
+
+#7
+def date(p,k,a):
+    """
+    """
+    if k in (1,3,5,7,8,10,12):
+
+
 
 
 
