@@ -75,10 +75,21 @@ def is_prem(n):
     return True
 
 #7
-def date(p,k,a):
+def date(day, month, year):
     """
     """
-    if k in (1,3,5,7,8,10,12):
+    if month in (1, 3, 5, 7, 8, 10, 12):
+        return day >= 1 and day <= 31
+    elif month in (4, 6, 9, 11):
+        return day >= 1 and day <= 30
+    elif month == 2:
+        if year % 4 == 0 and (year % 400 == 0 or year % 100 != 0):
+            return day >= 1 and day <= 29
+        else:
+            return day >= 1 and day <= 28
+    else:
+        return False
+
 
 
 
