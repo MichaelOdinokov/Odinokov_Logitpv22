@@ -1,6 +1,3 @@
-
-
-
 #1
 def arithmetic(arv1:float,tehe: str,arv2:float)->any:
     """E
@@ -24,7 +21,7 @@ def   is_year_leap(a:int)->bool:
     :rtype: str
     """
     if a%4==0:
-        True
+        True 
     else:
         False
     return False or True
@@ -56,6 +53,59 @@ def season(k1,k:int)->any:
     return k1
 
 #5
+def bank(b: float, aa: int):
+    """
+    """
+    for i in range(aa):
+        b=b+b*0.1
+    return b
+ 
+#6
+def is_prem(n: float):
+    """
+    """
+    if n<=1:
+        return False
+    for i in range(2,n):
+        if n%i==0:
+            return False
+    return True
+
+#7
+def date(day: int,month:int,year: int):
+    """
+    """
+    if month in (1, 3, 5, 7, 8, 10, 12):
+        return day>=1 and day<=31
+    elif month in (4, 6, 9, 11):
+        return day>=1 and day<=30
+    elif month==2:
+        if year%4==0 and (year%400==0 or year%100!=0):
+            return day>=1 and day<=29
+        else:
+            return day>=1 and day<=28
+    else:
+        return False
+
+#7.2
+from datetime import*
+def date_(d:int,m: int,y:int)->bool:
+    """
+    :param:
+    ::rtype:
+    """
+    try:
+        print(date(y,m,d))
+        date(y,m,d)
+        flag=True
+    except:
+        print("Viga")
+        flag=False
+    return flag
+
+
+
+
 
 
 
