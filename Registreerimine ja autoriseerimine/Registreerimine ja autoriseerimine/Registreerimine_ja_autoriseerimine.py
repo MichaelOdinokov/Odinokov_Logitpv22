@@ -3,5 +3,9 @@ l=[]
 p=[]
 
 while True:
-    j=valik(int(input("Logisisse või Regestremiremine:")))
 
+    r=registreerimine(float(input("")))
+    a=autoriseerimine(float(input("Kas ta tahab autoserimine?")))
+    l=alogin(float(input("Login: ")))
+
+    

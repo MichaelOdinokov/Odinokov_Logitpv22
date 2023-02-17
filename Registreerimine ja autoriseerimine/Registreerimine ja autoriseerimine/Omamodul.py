@@ -1,21 +1,13 @@
 ﻿l=[]
 p=[]
 
-def login(l: list, p:list):
-    """
-    """
-    return l, p
 
-def valik(j: int):
-    """
-    """
-
-def newuser(u: int):
+def registreerimine(r:float,):
     """
     """
     u=bool(input("Looma nimi: "))
     u=input("Введи букву => ")
-    print("Вы ввели заглавную букву ",u)
+    print("Вы ввели заглавную букву ",u) 
 
     pp=input("Введи цифру => ")
     if (p.isdigit(pp)):
@@ -25,7 +17,32 @@ def newuser(u: int):
             print("Tere tulemast uus kasutaja!")
     return u,p
 
-def alogin(l: list, p: list):
+def autoriseerimine(a:float):
+    """
+    """
+    if l==[] and p==[]:
+        print ("Tere tulemst!")
+    else:
+        print("Teil ei ole kasutajad!")
+
+def nimeparool(np: int):#nime või parool muutamine
+
+
+def unustanud parooli taastamine
+def lõpetamine
+
+
+
+def login(l: list, p:list):
+    """
+    """
+    return l, p
+
+
+
+
+
+def alogin(l: list, p: list):#sisessta
     """
     """
     nimi=input("Sissesta oma nimi: ")
@@ -38,6 +55,8 @@ def alogin(l: list, p: list):
             print("Vale sõna!")
     else:
         print("Ei ole kiris!")
+    return nimi,salasona
+
 
 
 
