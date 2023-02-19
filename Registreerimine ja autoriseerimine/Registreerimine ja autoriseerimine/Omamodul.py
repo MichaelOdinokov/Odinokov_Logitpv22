@@ -1,49 +1,12 @@
-﻿l=[]
+﻿import string
+l=[]
 p=[]
-
-
-def registreerimine(r:float,):
-    """
-    """
-    u=bool(input("Looma nimi: "))
-    u=input("Введи букву => ")
-    print("Вы ввели заглавную букву ",u) 
-
-    pp=input("Введи цифру => ")
-    if (p.isdigit(pp)):
-        print("Вы ввели цифру ", pp)
-        l.appen(u) and p.append(pp)
-        if l==[] and p==[]:
-            print("Tere tulemast uus kasutaja!")
-    return u,p
-
-def autoriseerimine(a:float):
-    """
-    """
-    if l==[] and p==[]:
-        print ("Tere tulemst!")
-    else:
-        print("Teil ei ole kasutajad!")
-
-def nimeparool(np: int):#nime või parool muutamine
-
-
-def unustanud parooli taastamine
-def lõpetamine
-
-
-
-def login(l: list, p:list):
-    """
-    """
-    return l, p
-
-
-
-
 
 def alogin(l: list, p: list):#sisessta
     """
+    Kasutaja sisse
+    :parem list l , list p: Järjend
+    :rtype: nimi, salasona
     """
     nimi=input("Sissesta oma nimi: ")
     salasona=input("Sisesta ma salsõna:")
@@ -56,6 +19,49 @@ def alogin(l: list, p: list):#sisessta
     else:
         print("Ei ole kiris!")
     return nimi,salasona
+
+
+
+def registreerimine(a: int)->bool:
+    """
+    """
+    nimi=bool(input("Sisse sinu uus nimi: "))
+    a=int(input("1-autoserimine, 2-ise registreerimine"))
+    if a==1:
+        salasona=Salasona(12)
+        l.append(nimi)
+        p.append(salasona)
+    elif a==2:
+        p=float(input("Sisse sinu parool:"))
+        p.append(p)
+
+
+
+
+def Salasona(k: int)->bool:
+    """
+    Määrme salasõna..
+    :parem int k:Järjend salasõna numbridest
+    :rtype: bool
+    """
+    saladus=""
+    for i in range(k):
+        t=(string.ascii_letters) #Aa...Zz
+        num=([1,2,3,4,5,6,7,8,9,0])
+        sym=(["*","-",".","!","_"])
+        t_num=[t,str(num),sym]
+        saladus+=(t_num)
+    return saladus
+
+def mp(m)
+
+
+
+
+
+
+
+
 
 
 
