@@ -1,24 +1,24 @@
 from Omamodul import*
-l=[]
-p=[]
+l=[]#nimi
+p=[]#salsõna
 
 while True:
-    l=log(int(input("1- Sisse, 2-registreerimine:")))
-    if l==2:
-        nimi=alogin(int("Sisse sinu nimi:"),salasona=int(input("Sisesta ma salsõna:")))
-        pm=mp(int(input("1-parool ja nimi muutuja, 2 - ei taha")))
-        if pm==1:
-            nimi=mp(bool(input("Sisse sinu uus nimi: ")))
-            print(nimi)
-        elif pm==2:
-            continue
-    elif l==1:
-        n=int(input("1-Välja, 2-jää: "))
-        if n==1:
-            break
-        elif n==2:
-            continue
+    l=log(int(input("1- Sisse, 2-registreerimine, 3-muutuja salsõna, 4-nimi muutaja:")))
+    if l==1:
+        n=alogin(int(input("Sissesta oma nimi: "), salasona=input("Sissesta ma salsõna:")))#nimi
+    elif l==2:
+        n=registreerimine(bool(input("Sisse sinu uus nimi: ")))
+    elif l==3:
+        nimi=mp(int(input("Sisse sinu nimi:")))
+    elif l==4:
+        n=nimim(bool(input("Sisse sinu vana nimi:")))
 
+
+
+
+        
+
+    
 
 
         
