@@ -1,36 +1,35 @@
 ﻿palgad=[1200,2500,750,395,1200]
 inimesed=["A","B","C","D","E","F","G"]
 
-def k(k:int,p:float)->bool:
+def k(k:bool,pp:int)->bool:
     """
     Kasutajad kirjuta ise nimi
     :parem k: Muutaja
     :rtype: bool
     """
+    k=bool(input("Sisse sinu nimi:"))
+    k.append
     if k in inimesed and inimesed.istitle():# Начинаются ли слова в строке с заглавной буквы: (inimesed.istitle())
-        p=float(input("Sisse teie palgad: "))
+        pp=int(input("Sisse teie palgad: "))
+        print(pp)
         pass
     else:
         print("Viga!")
-    return k, p
+    return k, pp
 
 #19 Ise funktsioon, uus töötane
-t=[]#töötane
-vanus=[]
-pa=[]#palgad
-v=1300
 
-def uk(u:bool, vanus: int, p: int):
+def uk(u:int, t: list):
     """
     Uus töötane registrerimine
     :parem bool u: Muutaja
     :rtype: u
     """
-    
-    if vanus<18:
+    va=int(input("Teie vanus: "))
+    if va<18:
         print("Te ei soobi!")
-    elif vanus>=18:
-        u=int(input("Sisse teie nimi: "))
+    elif va>=18:
+        u=bool(input("Sisse teie nimi: "))
         t.append(u)
         p=int(input("Milline palg te tahte, suurem 1200 euro või väiksem(1-Suurem, 2-Väikem):"))
         if p==1:
@@ -38,7 +37,7 @@ def uk(u:bool, vanus: int, p: int):
         elif p==2:
             print("Teie palg on 1300 eurp.Palju õnne!")
             pa.append(v)
-    return u, vanus, p
+    return u, p
 
 def valik(v:int):
     """
@@ -49,12 +48,17 @@ def valik(v:int):
     if v==2:
         uk
     elif v==1:
-        nimi=int(input("Sisse sinu nimi:"))
+        nimi=bool(input("Sisse sinu nimi:"))
         if nimi in t:
             t.removed(nimi)
             print("Sinu nimi removed. Nägemist!")
         else:
             print("Te ei töötate siin!")
+    return v
+
+#def delete
+#def create
+
 
 
             
