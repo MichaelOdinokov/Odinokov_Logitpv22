@@ -1,11 +1,11 @@
 from Omamodul import*
 l=[]#nimi
-p=[]#salsõna
+p=[]#salsÃµna
 
 while True:
-    l=log(int(input("1- Sisse, 2-registreerimine, 3-muutuja salsõna, 4-nimi muutaja:")))
+    l=log(int(input("1- Sisse, 2-registreerimine, 3-muutuja salsÃµna, 4-nimi muutaja:")))
     if l==1:
-        n=alogin(int(input("Sissesta oma nimi: "), salasona=input("Sissesta ma salsõna:")))#nimi
+        n=alogin(int(input("Sissesta oma nimi: "), salasona=input("Sissesta ma salsÃµna:")))#nimi
     elif l==2:
         n=registreerimine(bool(input("Sisse sinu uus nimi: ")))
     elif l==3:

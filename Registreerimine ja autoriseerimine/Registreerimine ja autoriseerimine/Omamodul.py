@@ -14,7 +14,7 @@ def log(l:int)->bool:
         alogin
     elif l==2:
         registreerimine
-    return l
+    return l 
 
 def alogin(l: list, p: list):#sisessta
     """
@@ -43,23 +43,23 @@ def registreerimine(a: int)->bool:#Looma
     :rtype: p, nimi
     """
     nimi=bool(input("Sisse sinu uus nimi: "))
-    if nimi not in l==[]:
+    if nimi not in l:
         l.append(nimi)
         print("Sinu uus nimi", nimi)
         a=int(input("1-autoserimine, 2-ise registreerimine"))
     if a==1:
         salasona=Salasona(12)
-        if salasona not in p==[]:
+        if salasona not in p:
             p.append(salasona) 
             print("Tere tulemast!")
     elif a==2:
-        p=float(input("Sisse sinu p:"))
-        if p not in p==[]:
-            p.append(p)
+        pp=float(input("Sisse sinu salsõna:"))
+        if pp not in p:
+            p.append(pp)
             print("Tere tulemast!")
         else:
             print("See nimi oli!")
-    return p, nimi
+    return pp, nimi
 
 
 
@@ -85,12 +85,12 @@ def mp(p:float,nimi: bool, l: list):# salsõna muutuja
     :rtypr: p, nimi
     """
     nimi=int(input("Sisse sinu nimi:"))
-    if nimi not in l==[]:
+    if nimi not in l:
         print("Järendisse ei ole see nimi! Kordate.")
     else:
         nimi=int(input("Oled sa kindel, salaõna muutuja? 1-Jah, 2-Ei"))
     if nimi==1:
-        a=int(input("1-autoserimine, 2-ise registreerimine"))
+        a=int(input("1-automat, 2-mina ise parooli"))
         if a==1:
             p.remove(salasona)
             print("Vana salsõna removed")
@@ -114,9 +114,9 @@ def nimim(nimi:int, l: list)->bool:#nimi muutuja
     :rtype: bool
     """
     nimi=bool(input("Sisse sinu vana nimi:"))
-    if nimi not in l==[]:
+    if nimi not in l:
         print("Vale nimi!")
-    elif nimi in l==[]:
+    elif nimi in l:
         nimi=int(input("Oled sa kindel, nimi muutaja? 1-Jah, 2-Ei"))
     if nimi==1:
         l.remove(nimi)
@@ -136,7 +136,7 @@ def nimi(nimi:int, l: list)->bool:
     :rtype: bool
     """
     nimi=bool(input("Sisse sinu uus nimi: "))
-    if nimi not in l==[]:
+    if nimi not in l:
         l.append(nimi)
     print(f"Sinu uus nimi {nimi}")
     return nimi
